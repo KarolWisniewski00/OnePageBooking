@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ScraperController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {return view('index');})->name('index');
+Route::get('/', [IndexController::class, 'index'])->name('index');
+Route::get('/rules', [IndexController::class, 'rules'])->name('rules');
