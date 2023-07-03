@@ -13,7 +13,7 @@
                 <div class="container">
                     <div class="carousel-caption text-start">
                         <h1 class="font-custom">ZB APARTMENT BEIGE</h1>
-                        <p><a class="btn btn-lg btn-primary me-2" href=""><i class="fa-solid fa-link me-2"></i>Rezerwacja</a><a class="btn btn-lg btn-secondary" href=""><i class="fa-solid fa-angles-right me-2"></i>Zobacz więcej</a></p>
+                        <p><a class="btn btn-lg btn-primary me-2" href=""><i class="fa-solid fa-link me-2"></i>Rezerwacja</a><button type="button" class="btn btn-lg btn-secondary photo-button" data-gallery="BEIGE"><i class="fa-solid fa-angles-right me-2"></i>Zobacz więcej</button></p>
                     </div>
                 </div>
 
@@ -23,7 +23,7 @@
                 <div class="container">
                     <div class="carousel-caption text-start">
                         <h1 class="font-custom">ZB APARTMENT GOLD</h1>
-                        <p><a class="btn btn-lg btn-primary me-2" href=""><i class="fa-solid fa-link me-2"></i>Rezerwacja</a><a class="btn btn-lg btn-secondary" href=""><i class="fa-solid fa-angles-right me-2"></i>Zobacz więcej</a></p>
+                        <p><a class="btn btn-lg btn-primary me-2" href=""><i class="fa-solid fa-link me-2"></i>Rezerwacja</a><button class="btn btn-lg btn-secondary photo-button" data-gallery="GOLD"><i class="fa-solid fa-angles-right me-2"></i>Zobacz więcej</button></p>
                     </div>
                 </div>
             </div>
@@ -205,8 +205,8 @@
                     <h1 class="font-custom">Zobacz interesujący cię apartament</h1>
                     <p>Nasze ekskluzywne i komfortowe apartamenty są wyposażone w wysokiej jakości udogodnienia oraz znajdują się w pobliżu atrakcji. Nasza kompetentna obsługa zadba o Twoje potrzeby. Bezpieczne podróże służbowe i wypoczynkowe to nasza specjalność.</p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a class="btn btn-lg btn-primary me-2" href=""><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT GOLD</a>
-                        <a class="btn btn-lg btn-secondary" href=""><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT BEIGE</a>
+                        <button type="button" class="btn btn-lg btn-primary me-2 photo-button" data-gallery="GOLD"><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT GOLD</button>
+                        <button type="button" class="btn btn-lg btn-secondary photo-button" data-gallery="BEIGE"><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT BEIGE</button>
                     </div>
                 </div>
             </div>
@@ -233,18 +233,25 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    ...
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3 class="font-custom">Wybrano - ZB APARTMENT <span class="gallery-type">GOLD<span></h3>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button type="button" class="btn btn-lg btn-primary me-2 photo-button" data-gallery="GOLD"><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT GOLD</button>
+                                                <button type="button" class="btn btn-lg btn-secondary photo-button" data-gallery="BEIGE"><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT BEIGE</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark me-2"></i>Zamknij</button>
-                                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-floppy-disk me-2"></i>Zapisz zmiany</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex flex-column justify-content-center align-items-center my-3 text-center">
-                    <h3 class="text-primary mt-5">Galeria - <span id="gallery-type">ZB APARTMENT GOLD<span></h3>
+                    <h3 class="text-primary mt-5">Galeria - ZB APARTMENT <span class="gallery-type">GOLD<span></h3>
                     <h1 class="font-custom pb-3">Najlepsze udogodnienia</h1>
                 </div>
                 <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
@@ -257,11 +264,11 @@
                     </div>
                     <div class="carousel-inner">
                         @for($x = 1; $x <= 20; $x++) @if($x==1) <div class="carousel-item active text-center">
-                            <img class="img-fluid" alt="" src="{{asset('image/gold/'.$x.'.jpg')}}">
+                            <img class="img-fluid img-gallery" alt="" src="{{asset('image/gold/'.$x.'.jpg')}}">
                     </div>
                     @else
                     <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="" src="{{asset('image/gold/'.$x.'.jpg')}}">
+                        <img class="img-fluid img-gallery" alt="" src="{{asset('image/gold/'.$x.'.jpg')}}">
                     </div>
                     @endif
                     @endfor
@@ -425,4 +432,25 @@
     </div>
 </section>
 <!--CONTACT-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var selectedApartmentGallery = 'GOLD';
+
+    $(document).ready(function() {
+        $('.photo-button').click(function() {
+            selectedApartmentGallery = $(this).data('gallery');
+            $('.gallery-type').text(selectedApartmentGallery);
+            updateGalleryImages(selectedApartmentGallery);
+        });
+    });
+
+    function updateGalleryImages(gallery) {
+        $('.carousel-item').each(function(index) {
+            var folder = gallery === 'GOLD' ? 'gold' : 'beige';
+            var imagePath = "{{asset('image/')}}/" + folder + "/" + (index + 1) + ".jpg";
+            $(this).find('.img-gallery').attr('src', imagePath);
+        });
+    }
+</script>
+
 @endsection

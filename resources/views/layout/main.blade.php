@@ -19,8 +19,7 @@
                     <li class="nav-item text-white px-1"><i class="fa-solid fa-house me-2"></i>Nowe Inspiracje<i class="fa-solid fa-location-dot mx-2"></i>Piekary Śląskie, Ul.Sienkiewicza 1</li>
                 </ul>
                 <ul class="nav">
-                    <li class="nav-item text-white px-1"><i class="fa-brands fa-facebook"></i></li>
-                    <li class="nav-item text-white px-1"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="nav-item text-white px-1"><a href="https://www.facebook.com/Nowe-Inspiracje-441625376173865/" class="text-white" style="text-decoration: none;"><i class="fa-brands fa-facebook"></i></a></li>
                 </ul>
             </div>
         </nav>
