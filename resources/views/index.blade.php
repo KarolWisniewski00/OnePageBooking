@@ -1,4 +1,19 @@
 @extends('layout.main')
+@section('meta')
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{route('index')}}" />
+
+<title>ZB Apartments - firma Nowe Inspiracje</title>
+<meta property="og:title" content="ZB Apartments - firma Nowe Inspiracje" />
+<meta name="twitter:title" content="ZB Apartments - firma Nowe Inspiracje" />
+
+<meta name="description" content="Sprawdź wyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice!">
+<meta property="og:description" content="Sprawdź nawyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice!"/>
+<meta name="twitter:description" content="Sprawdź nawyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice!"/>
+<meta name="description" content="Sprawdź wyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice!">
+
+<meta name="keywords" content="zbapartments,zb apartments,zbapartment,zb apartment, Nowe inspiracje, Nowe inspiracje apartamenty, Nowe inspiracje zbapartments,, apartamenty do wynajęcia Piekary Śląskie, apartamenty do wynajęcia w okolicy Piekary Śląskie, apartamenty do wynajęcia Bobrowniki, apartamenty do wynajęcia w okolicy Bobrowniki, nowoczesne apartamenty do wynajęcia, ekskluzywne apartamenty do wynajęcia, apartamenty pod wynajem krótkoterminowy">
+@endsection('meta')
 @section('content')
 <!--HERO-->
 <section>

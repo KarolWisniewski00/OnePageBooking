@@ -1,4 +1,17 @@
 @extends('layout.main')
+@section('meta')
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{route('rules')}}" />
+
+<title>ZB Apartments - Regulamin</title>
+<meta property="og:title" content="ZB Apartments - Regulamin" />
+<meta name="twitter:title" content="ZB Apartments - Regulamin" />
+
+<meta name="description" content="Zapoznaj się z regulaminem ZB Apartments.">
+<meta property="og:description" content="Zapoznaj się z regulaminem ZB Apartments." />
+<meta name="twitter:description" content="Zapoznaj się z regulaminem ZB Apartments." />
+<meta name="description" content="Zapoznaj się z regulaminem ZB Apartments.">
+@endsection('meta')
 @section('content')
 <div class="container">
     <div class="row">

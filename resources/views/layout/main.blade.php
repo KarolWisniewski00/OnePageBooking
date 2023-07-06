@@ -2,9 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ZB Apartments</title>
+    <link rel="icon" href="{{asset('image/logo.png')}}" type="image/png">
+    <meta property="og:image" content="{{asset('image/logo.png')}}" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta name="author" content="Karol Wiśniewski">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <meta property="og:site_name" content="ZB Apartments - firma Nowe Inspiracje"/>
+    @yield('meta')
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e37acf9c2e.js" crossorigin="anonymous"></script>
@@ -19,7 +27,7 @@
                     <li class="nav-item text-white px-1 text-end">Biuro<i class="fa-solid fa-house mx-2"></i>Nowe Inspiracje<i class="fa-solid fa-location-dot mx-2"></i>Piekary Śląskie, Ul.Sienkiewicza 1</li>
                 </ul>
                 <ul class="nav">
-                    <li class="nav-item text-white px-1"><a href="" class="text-white" style="text-decoration: none;"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="nav-item text-white px-1"><a href="https://instagram.com/zb.apartments?igshid=MzRlODBiNWFlZA==" class="text-white" style="text-decoration: none;"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
             </div>
         </nav>
