@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 gsap">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h1 class="font-custom">Regulamin</h1>
                 <!-- Button trigger modal -->
@@ -30,4 +30,34 @@
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+    //SCROLL TRIGGER
+    gsap.registerPlugin(ScrollTrigger);
+    function st(string) {
+        const elements = document.querySelectorAll('.gsap');
+        elements.forEach(element => {
+            gsap.fromTo(element.children, {
+                opacity: 0,
+                y: 100,
+                scale: 0.8
+            }, {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                duration: 1,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: element,
+                    start: 'top 75%',
+                    end: 'top 75%',
+                }
+            });
+        });
+    };
+    st();
+
+</script>
 @endsection

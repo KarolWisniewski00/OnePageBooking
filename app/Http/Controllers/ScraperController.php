@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class ScraperController extends Controller
 {
-    public function getBookingOpinion()
+    public function getBookingOpinion(string $string = 'https://www.booking.com/Pulse-HtUu9z')
     {
         $client = new GuzzleHttpClient();
-        $url = 'https://www.booking.com/Pulse-HtUu9z';
+        $url = $string;
         $page = $client->request('GET', $url);
         $html = $page->getBody();
 
