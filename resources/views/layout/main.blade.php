@@ -11,7 +11,7 @@
     <meta property="og:locale" content="pl_PL" />
     <meta name="author" content="Karol Wiśniewski">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
-    <meta property="og:site_name" content="ZB Apartments - firma Nowe Inspiracje"/>
+    <meta property="og:site_name" content="ZB Apartments - firma Nowe Inspiracje" />
     @yield('meta')
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
@@ -22,12 +22,15 @@
     <!--NAV-->
     <section>
         <nav class="py-1 bg-dark border-bottom">
-            <div class="container d-flex flex-wrap justify-content-end">
-                <ul class="nav me-auto">
-                    <li class="nav-item text-white px-1 text-end">Biuro<i class="fa-solid fa-house mx-2"></i>Nowe Inspiracje<i class="fa-solid fa-location-dot mx-2"></i>Piekary Śląskie, Ul.Sienkiewicza 1</li>
+            <div class="container d-flex flex-wrap justify-content-center">
+                <ul class="nav col-md-4 justify-content-center">
                 </ul>
-                <ul class="nav">
-                    <li class="nav-item text-white px-1"><a href="https://instagram.com/zb.apartments?igshid=MzRlODBiNWFlZA==" class="text-white" style="text-decoration: none;"><i class="fa-brands fa-instagram"></i></a></li>
+                <ul class="nav col-md-4 justify-content-center">
+                    <li class="nav-item text-white px-1 text-end">LUKSUSOWE APARTAMENTY</li>
+                </ul>
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item text-white px-1"><a href="https://instagram.com/zb.apartments?igshid=MzRlODBiNWFlZA==" class="text-white" style="text-decoration: none;"><img class="rounded-circle" alt="" src="https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png" width="32px" height="32px"></a></li>
+                    <li class="nav-item text-white px-1"><a href="https://www.booking.com/Pulse-HtUu9z" class="text-white" style="text-decoration: none;"><img class="rounded-circle" alt="" src="https://cf.bstatic.com/static/img/favicon/9ca83ba2a5a3293ff07452cb24949a5843af4592.svg" width="32px" height="32px"></a></li>
                 </ul>
             </div>
         </nav>
