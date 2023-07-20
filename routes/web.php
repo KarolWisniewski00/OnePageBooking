@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FacebookProxyController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ScraperController;
 use Illuminate\Support\Facades\Route;

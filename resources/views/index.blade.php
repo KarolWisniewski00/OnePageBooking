@@ -8,8 +8,8 @@
 <meta name="twitter:title" content="ZB Apartments - firma Nowe Inspiracje" />
 
 <meta name="description" content="Sprawdź wyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice!">
-<meta property="og:description" content="Sprawdź nawyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice!"/>
-<meta name="twitter:description" content="Sprawdź nawyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice!"/>
+<meta property="og:description" content="Sprawdź nawyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice!" />
+<meta name="twitter:description" content="Sprawdź nawyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice!" />
 <meta name="description" content="Sprawdź wyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice!">
 
 <meta name="keywords" content="zbapartments,zb apartments,zbapartment,zb apartment, Nowe inspiracje, Nowe inspiracje apartamenty, Nowe inspiracje zbapartments,, apartamenty do wynajęcia Piekary Śląskie, apartamenty do wynajęcia w okolicy Piekary Śląskie, apartamenty do wynajęcia Bobrowniki, apartamenty do wynajęcia w okolicy Bobrowniki, nowoczesne apartamenty do wynajęcia, ekskluzywne apartamenty do wynajęcia, apartamenty pod wynajem krótkoterminowy">
@@ -271,36 +271,32 @@
                 </div>
                 <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
                     <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
-                        @for($x = 0; $x < 20; $x++)
-                        @if($x==0)
-                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" class="active" aria-current="true" aria-label="Slide {{$x+1}}"></button>
-                        @else
-                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" aria-label="Slide {{$x+1}}"></button>
-                        @endif
-                        @endfor
+                        @for($x = 0; $x < 20; $x++) @if($x==0) <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" class="active" aria-current="true" aria-label="Slide {{$x+1}}"></button>
+                            @else
+                            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" aria-label="Slide {{$x+1}}"></button>
+                            @endif
+                            @endfor
                     </div>
                     <div class="carousel-inner">
-                        @for($x = 1; $x <= 20; $x++)
-                        @if($x==1)
-                        <div class="carousel-item carousel-item-gallery active text-center">
+                        @for($x = 1; $x <= 20; $x++) @if($x==1) <div class="carousel-item carousel-item-gallery active text-center">
                             <img class="img-fluid img-gallery" alt="" src="{{asset('image/gold/'.$x.'.jpg')}}">
-                        </div>
-                        @else
-                        <div class="carousel-item carousel-item-gallery text-center">
-                            <img class="img-fluid img-gallery" alt="" src="{{asset('image/gold/'.$x.'.jpg')}}">
-                        </div>
-                        @endif
-                        @endfor
                     </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
-                        <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-left text-white"></i></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
-                        <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-right text-whitet"></i></span>
-                    </button>
+                    @else
+                    <div class="carousel-item carousel-item-gallery text-center">
+                        <img class="img-fluid img-gallery" alt="" src="{{asset('image/gold/'.$x.'.jpg')}}">
+                    </div>
+                    @endif
+                    @endfor
                 </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                    <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-left text-white"></i></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                    <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-right text-whitet"></i></span>
+                </button>
             </div>
+        </div>
     </div>
     </div>
 </section>
@@ -480,6 +476,36 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<!-- Messenger Wtyczka czatu Code -->
+<div id="fb-root"></div>
+
+<!-- Your Wtyczka czatu code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "441625376173865");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v17.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 <script>
     var selectedApartmentGallery = 'GOLD';
 
@@ -494,7 +520,7 @@
     function updateGalleryImages(gallery) {
         $('.carousel-item-gallery').each(function(index) {
             var folder = gallery === 'GOLD' ? 'gold' : 'beige';
-            var imagePath = "{{asset('image/')}}/" + folder + "/" + (index+1) + ".jpg";
+            var imagePath = "{{asset('image/')}}/" + folder + "/" + (index + 1) + ".jpg";
             console.log(index)
             $(this).find('.img-gallery').attr('src', imagePath);
         });
@@ -502,6 +528,7 @@
 
     //SCROLL TRIGGER
     gsap.registerPlugin(ScrollTrigger);
+
     function st(string) {
         const elements = document.querySelectorAll('.gsap');
         elements.forEach(element => {
@@ -524,6 +551,5 @@
         });
     };
     st();
-
 </script>
 @endsection
