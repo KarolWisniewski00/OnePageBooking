@@ -18,10 +18,6 @@
 <!--HERO-->
 <section>
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="bg-img-hero-2"></div>
@@ -37,8 +33,17 @@
                 <div class="bg-img-hero-1"></div>
                 <div class="container">
                     <div class="carousel-caption text-start">
-                        <h1 class="font-custom">ZB APARTMENT GOLD</h1>
-                        <p><a class="btn btn-lg btn-primary m-2 ms-0" href="https://www.booking.com/Pulse-HtUu9z"><i class="fa-solid fa-link me-2"></i>Rezerwacja</a><a href="#gallery" class="btn btn-lg btn-secondary photo-button m-2 ms-0" data-gallery="GOLD"><i class="fa-solid fa-angles-right me-2"></i>Zobacz więcej</a></p>
+                        <h1 class="font-custom">ZB APARTMENT LUXOR</h1>
+                        <p><a class="btn btn-lg btn-primary m-2 ms-0" href="https://www.booking.com/hotel/pl/zacisze-bobrowniki.pl.html?aid=1263239&label=PShare-Pulse-HtUu9z%401684336347&sid=68bf73d8faacbd39b88f918c7cff31f8&dist=0&keep_landing=1&sb_price_type=total&type=total&"><i class="fa-solid fa-link me-2"></i>Rezerwacja</a><a href="#gallery" class="btn btn-lg btn-secondary photo-button m-2 ms-0" data-gallery="LUXOR"><i class="fa-solid fa-angles-right me-2"></i>Zobacz więcej</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bg-img-hero-3"></div>
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="font-custom">ZB APARTMENT GREY</h1>
+                        <p><a class="btn btn-lg btn-primary m-2 ms-0" href="https://www.booking.com/hotel/pl/zb-apartment-black-bytom-centrum-piekary-slaskie-siemianowice-chorzow.pl.html?aid=1263239&label=PShare-Pulse-HtUu9z%401684336347&sid=68bf73d8faacbd39b88f918c7cff31f8&dest_id=-496464;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=7;hpos=7;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1713783914;srpvid=bd934dea6d9601cf;type=total;ucfs=1&#hotelTmpl"><i class="fa-solid fa-link me-2"></i>Rezerwacja</a><a href="#gallery" class="btn btn-lg btn-secondary photo-button m-2 ms-0" data-gallery="GREY"><i class="fa-solid fa-angles-right me-2"></i>Zobacz więcej</a></p>
                     </div>
                 </div>
             </div>
@@ -65,13 +70,14 @@
                     <p class="my-3">Firma Nowe inspiracje - mieszkanie z pomysłem stworzyła nowoczesne apartamenty pod wynajem krótkoterminowy pod nazwą ZB Apartment który zapewni Ci komfortowy i luksusowy odpoczynek. Oferujemy wyjątkowe, nowoczesne apartamenty do wynajęcia w okolicy Piekary Śląskie Bytom Bobrowniki Chorzów Katowice.</p>
                     <p class="my-3">Nasz zespół posiada wieloletnie doświadczenie, które pozwala nam stworzyć warunki spełniające wszystkie twoje oczekiwania i potrzeby.</p>
                     <p class="my-3">Dla nas każdy gość jest wyjątkowy. Dokładamy wszelkich starań, aby Twój pobyt w naszych apartamentach był przyjemny i niezapomniany. Tworzymy wspomnienia, które będą zachętą do powrotu do naszej lokalizacji i skorzystania z naszych usług.</p>
-                    <a href="https://www.booking.com/Pulse-HtUu9z" class="btn btn-primary btn-lg mt-4 mb-2"><i class="fa-solid fa-link me-2"></i>ZB APARTMENT GOLD</a>
-                    <a href="https://www.booking.com/Pulse-tpR9h6" class="btn btn-secondary btn-lg mb-4 mt-2"><i class="fa-solid fa-link me-2"></i>ZB APARTMENT BEIGE</a>
+                    <a href="https://www.booking.com/hotel/pl/zacisze-bobrowniki.pl.html?aid=1263239&label=PShare-Pulse-HtUu9z%401684336347&sid=68bf73d8faacbd39b88f918c7cff31f8&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="btn btn-primary btn-lg mt-4 mb-2"><i class="fa-solid fa-link me-2"></i>ZB APARTMENT LUXOR</a>
+                    <a href="https://www.booking.com/Pulse-tpR9h6" class="btn btn-secondary btn-lg mb-2 mt-2"><i class="fa-solid fa-link me-2"></i>ZB APARTMENT BEIGE</a>
+                    <a href="https://www.booking.com/hotel/pl/zb-apartment-black-bytom-centrum-piekary-slaskie-siemianowice-chorzow.pl.html?aid=1263239&label=PShare-Pulse-HtUu9z%401684336347&sid=68bf73d8faacbd39b88f918c7cff31f8&dest_id=-496464;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=7;hpos=7;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1713783914;srpvid=bd934dea6d9601cf;type=total;ucfs=1&#hotelTmpl" class="btn btn-secondary btn-lg mb-4 mt-2"><i class="fa-solid fa-link me-2"></i>ZB APARTMENT GREY</a>
                 </div>
             </div>
             <div class="col-12 col-md-7 gsap">
                 <div class="d-flex justify-content-center align-items-center h-100">
-                    <img class="img-fluid" alt="" src="{{asset('image/gold/16.jpg')}}">
+                    <img class="img-fluid" alt="" src="{{asset('image/luxor/16.jpg')}}">
                 </div>
             </div>
         </div>
@@ -92,12 +98,12 @@
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <div class="box mx-2 my-4">
                         <div class="imgBx">
-                            <img src="{{asset('image/gold/1.jpg')}}">
+                            <img src="{{asset('image/luxor/1.jpg')}}">
                         </div>
                         <div class="content">
                             <div>
-                                <h2 class="font-custom h1">ZB APARTMENT GOLD</h2>
-                                <p>Sześcioosobowy apartament Premium Gold z własnym ogrodem.
+                                <h2 class="font-custom h1">ZB APARTMENT LUXOR</h2>
+                                <p>Sześcioosobowy apartament Premium Luxor z własnym ogrodem.
                                     Szukasz relaksu spokoju to dobrze trafiłeś.
                                     Super okazja dla osób podróżujących i korzystających z lotniska Katowice Pyrzowice
                                 </p>
@@ -116,6 +122,22 @@
                             <div>
                                 <h2 class="font-custom h1">ZB APARTMENT BEIGE</h2>
                                 <p>Dwu pokojowy apartament typu Premium Beige z balkonem w bloku 3 piętrowym. Nowoczesny wystój zapewni wszystkim podróżującym komfort i relaks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 gsap">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="box mx-2 my-4">
+                        <div class="imgBx">
+                            <img src="{{asset('image/grey/3.jpeg')}}">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h2 class="font-custom h1">ZB APARTMENT GREY</h2>
+                                <p>Apartament Grey w centrum Bytomia doskonałe miejsce dla osób podróżujących , które szukają komfortu szybkiego internetu i wygody. To idealna baza wypadowa do zwiedzania miasta oraz okolicznych atrakcji.
                                 </p>
                             </div>
                         </div>
@@ -220,7 +242,7 @@
                     <h1 class="font-custom">Zobacz interesujący cię apartament</h1>
                     <p>Nasze ekskluzywne i komfortowe apartamenty są wyposażone w wysokiej jakości udogodnienia oraz znajdują się w pobliżu atrakcji. Nasza kompetentna obsługa zadba o Twoje potrzeby. Bezpieczne podróże służbowe i wypoczynkowe to nasza specjalność.</p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#gallery" class="btn btn-lg btn-primary me-2 photo-button" data-gallery="GOLD"><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT GOLD</a>
+                        <a href="#gallery" class="btn btn-lg btn-primary me-2 photo-button" data-gallery="LUXOR"><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT LUXOR</a>
                         <a href="#gallery" class="btn btn-lg btn-secondary photo-button" data-gallery="BEIGE"><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT BEIGE</a>
                     </div>
                 </div>
@@ -233,71 +255,47 @@
 <section id="gallery">
     <div class="container-fluid">
         <div class="row my-5 bg-opacity-10 bg-primary pb-5">
+            <div class="w-100 flex flex-column justify-content-center align-items-center">
+                <a href="#gallery" class="btn btn-lg btn-secondary m-2 photo-button w-100" data-gallery="LUXOR"><i class="fa-solid fa-angles-right me-2"></i>Pokaż Apartament Luxor</a>
+                <a href="#gallery" class="btn btn-lg btn-secondary m-2 photo-button w-100" data-gallery="BEIGE"><i class="fa-solid fa-angles-right me-2"></i>Pokaż Apartament Beige</a>
+                <a href="#gallery" class="btn btn-lg btn-secondary m-2 photo-button w-100" data-gallery="GREY"><i class="fa-solid fa-angles-right me-2"></i>Pokaż Apartament Grey</a>
+            </div>
             <div class="col-12 gsap">
-                <div class="d-flex flex-column justify-content-end align-items-end mt-3 text-center">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                        <i class="fa-solid fa-gears"></i>
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Ustawienia galerii</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h3 class="font-custom">Wybrano - ZB APARTMENT <span class="gallery-type">GOLD<span></h3>
-                                            <div class="d-flex justify-content-center align-items-center">
-                                                <button type="button" class="btn btn-lg btn-primary me-2 photo-button" data-gallery="GOLD"><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT GOLD</button>
-                                                <button type="button" class="btn btn-lg btn-secondary photo-button" data-gallery="BEIGE"><i class="fa-solid fa-angles-right me-2"></i>ZB APARTMENT BEIGE</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark me-2"></i>Zamknij</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="d-flex flex-column justify-content-center align-items-center my-3 text-center">
-                    <h3 class="text-primary mt-5">Galeria - ZB APARTMENT <span class="gallery-type">GOLD<span></h3>
+                    <h3 class="text-primary mt-5">Galeria - ZB APARTMENT <span class="gallery-type">LUXOR<span></h3>
                     <h1 class="font-custom pb-3">Najlepsze udogodnienia</h1>
                 </div>
                 <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
                     <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
-                        @for($x = 0; $x < 20; $x++) @if($x==0) <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" class="active" aria-current="true" aria-label="Slide {{$x+1}}"></button>
-                            @else
-                            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" aria-label="Slide {{$x+1}}"></button>
-                            @endif
-                            @endfor
+                        @for($x = 0; $x < 20; $x++) @if($x==0)
+                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" class="active" aria-current="true" aria-label="Slide {{$x+1}}"></button>
+                        @else
+                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" aria-label="Slide {{$x+1}}"></button>
+                        @endif
+                        @endfor
                     </div>
                     <div class="carousel-inner">
-                        @for($x = 1; $x <= 20; $x++) @if($x==1) <div class="carousel-item carousel-item-gallery active text-center">
-                            <img class="img-fluid img-gallery" alt="" src="{{asset('image/gold/'.$x.'.jpg')}}">
+                        @for($x = 1; $x <= 20; $x++) @if($x==1)
+                        <div class="carousel-item carousel-item-gallery active text-center">
+                            <img class="img-fluid img-gallery" alt="" src="{{asset('image/luxor/'.$x.'.jpg')}}">
+                        </div>
+                        @else
+                        <div class="carousel-item carousel-item-gallery text-center">
+                            <img class="img-fluid img-gallery" alt="" src="{{asset('image/luxor/'.$x.'.jpg')}}">
+                        </div>
+                        @endif
+                        @endfor
                     </div>
-                    @else
-                    <div class="carousel-item carousel-item-gallery text-center">
-                        <img class="img-fluid img-gallery" alt="" src="{{asset('image/gold/'.$x.'.jpg')}}">
-                    </div>
-                    @endif
-                    @endfor
-                </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
-                    <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-left text-white"></i></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
-                    <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-right text-whitet"></i></span>
-                </button>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                        <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-left text-white"></i></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                        <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-right text-whitet"></i></span>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 <!--GALLERY-->
@@ -307,7 +305,7 @@
         <div class="row pb-5">
             <div class="col-12 gsap">
                 <div class="d-flex flex-column justify-content-center align-items-center mb-3 text-center">
-                    <h3 class="text-primary mt-5">Opinie - <span id="option-type">ZB APARTMENT GOLD</span></h3>
+                    <h3 class="text-primary mt-5">Opinie - <span id="option-type">ZB APARTMENT LUXOR</span></h3>
                     <h1 class="font-custom pb-3">Co mówią o nas goście</h1>
                 </div>
                 <div id="myCarousel3" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
@@ -361,13 +359,13 @@
                     <h3 class="text-primary mt-5">Opinie - <span id="option-type">ZB APARTMENT BEIGE</span></h3>
                     <h1 class="font-custom pb-3">Co mówią o nas goście</h1>
                 </div>
-                <div id="myCarousel3" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
+                <div id="myCarousel5" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
                     <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
                         @foreach($opinions_beige as $key => $opinion)
                         @if($key==0)
-                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel3" data-bs-slide-to="{{$key}}" class="active" aria-current="true" aria-label="Slide {{$key+1}}"></button>
+                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel5" data-bs-slide-to="{{$key}}" class="active" aria-current="true" aria-label="Slide {{$key+1}}"></button>
                         @else
-                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel3" data-bs-slide-to="{{$key}}" aria-label="Slide {{$key+1}}"></button>
+                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel5" data-bs-slide-to="{{$key}}" aria-label="Slide {{$key+1}}"></button>
                         @endif
                         @endforeach
                     </div>
@@ -403,11 +401,62 @@
     </div>
 </section>
 <!--OPINION BEIGE-->
+<!--OPINION GREY-->
+<section id="opinion">
+    <div class="container overflow-hidden">
+        <div class="row pb-5">
+            <div class="col-12 gsap">
+                <div class="d-flex flex-column justify-content-center align-items-center mb-3 text-center">
+                    <h3 class="text-primary mt-5">Opinie - <span id="option-type">ZB APARTMENT GREY</span></h3>
+                    <h1 class="font-custom pb-3">Co mówią o nas goście</h1>
+                </div>
+                <div id="myCarousel4" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
+                    <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
+                        @foreach($opinions_grey as $key => $opinion)
+                        @if($key==0)
+                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel4" data-bs-slide-to="{{$key}}" class="active" aria-current="true" aria-label="Slide {{$key+1}}"></button>
+                        @else
+                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel4" data-bs-slide-to="{{$key}}" aria-label="Slide {{$key+1}}"></button>
+                        @endif
+                        @endforeach
+                    </div>
+
+                    @foreach($opinions_grey as $key => $opinion)
+                    @if($key==0)
+                    <div class="carousel-item active text-center">
+                        <figure class="text-center">
+                            <blockquote class="blockquote">
+                                <p>{{$opinion['span_content']}}</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mt-2">
+                                <img alt="" src="{{$opinion['img_profile_src']}}" class="img-fluid rounded-circle" style="max-height: 3em;"> {{$opinion['profile_name']}} <cite title="Source Title"><img alt="" src="{{$opinion['img_country_src']}}" class="img-fluid"> {{$opinion['country_name']}}</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    @else
+                    <div class="carousel-item text-center">
+                        <figure class="text-center">
+                            <blockquote class="blockquote">
+                                <p>{{$opinion['span_content']}}</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mt-2">
+                                <img alt="" src="{{$opinion['img_profile_src']}}" class="img-fluid rounded-circle" style="max-height: 3em;"> {{$opinion['profile_name']}} <cite title="Source Title"><img alt="" src="{{$opinion['img_country_src']}}" class="img-fluid"> {{$opinion['country_name']}}</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    @endif
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--OPINION GREY-->
 <!--CONTACT-->
 <section id="contact">
     <div class="container">
         <div class="row my-5 pb-5">
-            <div class="col-12 gsap">
+            <div class="col-12">
                 <div class="d-flex flex-column justify-content-center align-items-center my-3 text-center">
                     <h3 class="text-primary mt-5">Kontakt</h3>
                     <h1 class="font-custom">Skontaktuj się z nami</h1>
@@ -415,18 +464,18 @@
             </div>
             <div class="col-12 col-xl-6">
                 <div class="row">
-                    <div class="col-12 col-md-6 gsap">
-                        <a href="tel:+48503517499" class="d-flex flex-column justify-content-center align-items-center p-5 h-100 text-black" style="text-decoration: none;">
+                    <div class="col-12 col-md-6">
+                        <a href="tel:+48731518516" class="d-flex flex-column justify-content-center align-items-center p-5 h-100 text-black" style="text-decoration: none;">
                             <div class="d-flex flex-column justify-content-center align-items-center">
                                 <img src="{{asset('svg/phone.svg')}}" class="img-fluid" alt="">
                             </div>
                             <div class="d-flex flex-column justify-content-center align-items-center my-3 text-center">
                                 <h1 class="font-custom">Telefon</h1>
-                                <p>+48 503 517 499</p>
+                                <p>+48 731 518 516</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-6 gsap">
+                    <div class="col-12 col-md-6">
                         <a href="mailto:zbapartamenty@gmail.com" class="d-flex flex-column justify-content-center align-items-center p-5 h-100 text-black" style="text-decoration: none;">
                             <div class="d-flex flex-column justify-content-center align-items-center">
                                 <img src="{{asset('svg/mail.svg')}}" class="img-fluid" alt="">
@@ -437,21 +486,23 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-6 gsap">
+                    <div class="col-12 col-md-6">
                         <div class="d-flex flex-column justify-content-center align-items-center p-5 h-100">
                             <div class="d-flex flex-column justify-content-center align-items-center">
                                 <img src="{{asset('svg/location.svg')}}" class="img-fluid" alt="">
                             </div>
                             <div class="d-flex flex-column justify-content-center align-items-center my-3 text-center">
                                 <h1 class="font-custom">Adres</h1>
-                                <h6 class="font-custom fw-bold">ZB APARTMENT GOLD</h6>
+                                <h6 class="font-custom fw-bold">ZB APARTMENT LUXOR</h6>
                                 <p>42-583 Bobrowniki ul.żurawia 4/2</p>
                                 <h6 class="font-custom fw-bold">ZB APARTMENT BEIGE</h6>
-                                <p>41-943 Piekary Śląskie ul.Bursztynowa 20/2/4</p>
+                                <p>41-943 Piekary Śląskie ul.Bursztynowa 20/2</p>
+                                <h6 class="font-custom fw-bold">ZB APARTMENT GREY</h6>
+                                <p>41-940 Piekary SLaskie ul.Kopernika 4</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 gsap">
+                    <div class="col-12 col-md-6">
                         <div class="d-flex flex-column justify-content-center align-items-center p-5 h-100">
                             <div class="d-flex flex-column justify-content-center align-items-center">
                                 <img src="{{asset('svg/data.svg')}}" class="img-fluid" alt="">
@@ -466,7 +517,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-xl-6 gsap">
+            <div class="col-12 col-xl-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.595881555401!2d18.94442557726536!3d50.37408949285809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d3307d5711cf%3A0x598ebce1077d64a6!2sNowe%20Inspiracje!5e0!3m2!1spl!2spl!4v1688398134351!5m2!1spl!2spl" style="border:0; height: 100%; min-height: 30em; width: 100%;" class="py-5" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -507,7 +558,7 @@
   }(document, 'script', 'facebook-jssdk'));
 </script>
 <script>
-    var selectedApartmentGallery = 'GOLD';
+    var selectedApartmentGallery = 'LUXOR';
 
     $(document).ready(function() {
         $('.photo-button').click(function() {
@@ -519,8 +570,25 @@
 
     function updateGalleryImages(gallery) {
         $('.carousel-item-gallery').each(function(index) {
-            var folder = gallery === 'GOLD' ? 'gold' : 'beige';
-            var imagePath = "{{asset('image/')}}/" + folder + "/" + (index + 1) + ".jpg";
+            switch (gallery) {
+                case 'LUXOR' :
+                    var folder = 'luxor';
+                    var photo = '.jpg';
+                    break;
+                case 'BEIGE' :
+                    var folder = 'beige';
+                    var photo = '.jpg';
+                    break;
+                case 'GREY' :
+                    var folder = 'grey';
+                    var photo = '.jpeg';
+                    break;
+                default:
+                    break;
+            }
+
+
+            var imagePath = "{{asset('image/')}}/" + folder + "/" + (index + 1) + photo;
             console.log(index)
             $(this).find('.img-gallery').attr('src', imagePath);
         });
