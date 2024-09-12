@@ -30,7 +30,7 @@
 
             </div>
             <div class="carousel-item">
-                <div class="bg-img-hero-1"></div>
+                <div class="bg-img-hero-2" style="background-image: url('{{asset('image/luxor/12.jpg')}}');"></div>
                 <div class="container">
                     <div class="carousel-caption text-start">
                         <h1 class="font-custom">ZB APARTMENT LUXOR</h1>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="bg-img-hero-3"></div>
+                <div class="bg-img-hero-2" style="background-image: url('{{asset('image/grey/1.jpeg')}}');"></div>
                 <div class="container">
                     <div class="carousel-caption text-start">
                         <h1 class="font-custom">ZB APARTMENT GREY</h1>
@@ -299,7 +299,7 @@
     </div>
 </section>
 <!--GALLERY-->
-<!--OPINION-->
+<!--OPINION
 <section id="opinion">
     <div class="container overflow-hidden">
         <div class="row pb-5">
@@ -312,9 +312,9 @@
                     <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
                         @foreach($opinions as $key => $opinion)
                         @if($key==0)
-                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel3" data-bs-slide-to="{{$key}}" class="active" aria-current="true" aria-label="Slide {{$key+1}}"></button>
+                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel3" data-bs-slide-to="{{$key}}" class="active" aria-current="true" aria-label="Slide {{intval($key) + 1}}"></button>
                         @else
-                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel3" data-bs-slide-to="{{$key}}" aria-label="Slide {{$key+1}}"></button>
+                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel3" data-bs-slide-to="{{$key}}" aria-label="Slide {{intval($key) + 1}}"></button>
                         @endif
                         @endforeach
                     </div>
@@ -335,10 +335,10 @@
                     <div class="carousel-item text-center">
                         <figure class="text-center">
                             <blockquote class="blockquote">
-                                <p>{{$opinion['span_content']}}</p>
+                                <p></p>
                             </blockquote>
                             <figcaption class="blockquote-footer mt-2">
-                                <img alt="" src="{{$opinion['img_profile_src']}}" class="img-fluid rounded-circle" style="max-height: 3em;"> {{$opinion['profile_name']}} <cite title="Source Title"><img alt="" src="{{$opinion['img_country_src']}}" class="img-fluid"> {{$opinion['country_name']}}</cite>
+                                <img alt="" src="" class="img-fluid rounded-circle" style="max-height: 3em;">  <cite title="Source Title"><img alt="" src="" class="img-fluid"> </cite>
                             </figcaption>
                         </figure>
                     </div>
@@ -349,8 +349,8 @@
         </div>
     </div>
 </section>
-<!--OPINION-->
-<!--OPINION BEIGE-->
+<!--OPINION
+<!--OPINION BEIGE
 <section id="opinion" class="bg-opacity-10 bg-primary">
     <div class="container overflow-hidden">
         <div class="row pb-5">
@@ -363,13 +363,12 @@
                     <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
                         @foreach($opinions_beige as $key => $opinion)
                         @if($key==0)
-                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel5" data-bs-slide-to="{{$key}}" class="active" aria-current="true" aria-label="Slide {{$key+1}}"></button>
+                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel5" data-bs-slide-to="{{$key}}" class="active" aria-current="true" aria-label="Slide {{intval($key)+1}}"></button>
                         @else
-                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel5" data-bs-slide-to="{{$key}}" aria-label="Slide {{$key+1}}"></button>
+                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel5" data-bs-slide-to="{{$key}}" aria-label="Slide {{intval($key)+1}}"></button>
                         @endif
                         @endforeach
                     </div>
-
                     @foreach($opinions_beige as $key => $opinion)
                     @if($key==0)
                     <div class="carousel-item active text-center">
@@ -386,10 +385,10 @@
                     <div class="carousel-item text-center">
                         <figure class="text-center">
                             <blockquote class="blockquote">
-                                <p>{{$opinion['span_content']}}</p>
+                                <p></p>
                             </blockquote>
                             <figcaption class="blockquote-footer mt-2">
-                                <img alt="" src="{{$opinion['img_profile_src']}}" class="img-fluid rounded-circle" style="max-height: 3em;"> {{$opinion['profile_name']}} <cite title="Source Title"><img alt="" src="{{$opinion['img_country_src']}}" class="img-fluid"> {{$opinion['country_name']}}</cite>
+                                <img alt="" src="" class="img-fluid rounded-circle" style="max-height: 3em;">  <cite title="Source Title"><img alt="" src="" class="img-fluid"></cite>
                             </figcaption>
                         </figure>
                     </div>
@@ -400,8 +399,8 @@
         </div>
     </div>
 </section>
-<!--OPINION BEIGE-->
-<!--OPINION GREY-->
+<!--OPINION BEIGE
+<!--OPINION GREY
 <section id="opinion">
     <div class="container overflow-hidden">
         <div class="row pb-5">
@@ -414,9 +413,9 @@
                     <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
                         @foreach($opinions_grey as $key => $opinion)
                         @if($key==0)
-                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel4" data-bs-slide-to="{{$key}}" class="active" aria-current="true" aria-label="Slide {{$key+1}}"></button>
+                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel4" data-bs-slide-to="{{$key}}" class="active" aria-current="true" aria-label="Slide {{intval($key)+1}}"></button>
                         @else
-                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel4" data-bs-slide-to="{{$key}}" aria-label="Slide {{$key+1}}"></button>
+                        <button type="button" style="background-color: black;" data-bs-target="#myCarousel4" data-bs-slide-to="{{$key}}" aria-label="Slide {{intval($key)+1}}"></button>
                         @endif
                         @endforeach
                     </div>
@@ -437,10 +436,10 @@
                     <div class="carousel-item text-center">
                         <figure class="text-center">
                             <blockquote class="blockquote">
-                                <p>{{$opinion['span_content']}}</p>
+                                <p></p>
                             </blockquote>
                             <figcaption class="blockquote-footer mt-2">
-                                <img alt="" src="{{$opinion['img_profile_src']}}" class="img-fluid rounded-circle" style="max-height: 3em;"> {{$opinion['profile_name']}} <cite title="Source Title"><img alt="" src="{{$opinion['img_country_src']}}" class="img-fluid"> {{$opinion['country_name']}}</cite>
+                                <img alt="" src="" class="img-fluid rounded-circle" style="max-height: 3em;">  <cite title="Source Title"><img alt="" src="" class="img-fluid"> </cite>
                             </figcaption>
                         </figure>
                     </div>
