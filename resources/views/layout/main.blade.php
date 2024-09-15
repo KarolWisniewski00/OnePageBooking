@@ -21,20 +21,20 @@
 <body>
     <!--NAV-->
     <section>
-        <nav class="py-1 bg-dark border-bottom">
+        <header class="py-1 bg-dark border-bottom">
             <div class="container d-flex flex-wrap justify-content-center">
                 <ul class="nav col-md-4 justify-content-center">
                 </ul>
                 <ul class="nav col-md-4 justify-content-center">
-                    <li class="nav-item text-white px-1 text-end">LUKSUSOWE APARTAMENTY</li>
+                    <li class="nav-item text-white px-1 text-end">{{$setting['header']}}</li>
                 </ul>
                 <ul class="nav col-md-4 justify-content-end">
-                    <li class="nav-item text-white px-1"><a href="https://instagram.com/zb.apartments?igshid=MzRlODBiNWFlZA==" class="text-white" style="text-decoration: none;"><img class="rounded-circle" alt="" src="https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png" width="32px" height="32px"></a></li>
-                    <li class="nav-item text-white px-1"><a href="https://www.booking.com/Pulse-HtUu9z" class="text-white" style="text-decoration: none;"><img class="rounded-circle" alt="" src="https://cf.bstatic.com/static/img/favicon/9ca83ba2a5a3293ff07452cb24949a5843af4592.svg" width="32px" height="32px"></a></li>
+                    <li class="nav-item text-white px-1"><a href="{{$setting['ig_link']}}" class="text-white" style="text-decoration: none;"><img class="rounded-circle" alt="" src="https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png" width="32px" height="32px"></a></li>
+                    <li class="nav-item text-white px-1"><a href="{{$setting['b_link']}}" class="text-white" style="text-decoration: none;"><img class="rounded-circle" alt="" src="https://cf.bstatic.com/static/img/favicon/9ca83ba2a5a3293ff07452cb24949a5843af4592.svg" width="32px" height="32px"></a></li>
                 </ul>
             </div>
-        </nav>
-        <header class="py-3 mb-4 border-bottom">
+        </header>
+        <nav class="py-3 mb-4 border-bottom">
             <div class="container d-flex flex-wrap justify-content-center justify-content-md-between align-items-center">
                 <ul class="nav col-md-3">
                     <li class="nav-item"><a href="{{ Request::path() == '/' ? '' : route('index') }}#apartments" class="nav-link link-dark px-2">Apartamenty</a></li>
@@ -45,11 +45,10 @@
                 <ul class="nav col-md-3 justify-content-center">
                     <li class="nav-item"><a href="{{ Request::path() == '/' ? '' : route('index') }}#contact" class="nav-link link-dark px-2">Kontakt</a></li>
                     <li class="nav-item"><a href="{{ Request::path() == '/' ? '' : route('index') }}#gallery" class="nav-link link-dark px-2">Galeria</a></li>
-                    <li class="nav-item"><a href="{{ Request::path() == '/' ? '' : route('index') }}#opinion" class="nav-link link-dark px-2">Opinie</a></li>
                     <li class="nav-item"><a href="{{route('rules')}}" class="nav-link link-dark px-2">Regulamin</a></li>
                 </ul>
             </div>
-        </header>
+        </nav>
     </section>
     <!--NAV-->
     @yield('content')
@@ -57,7 +56,7 @@
     <section>
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <p class="col-md-4 mb-0 text-muted">&copy; 2023 Created by Karol Wiśniewski</p>
+                <p class="col-md-4 mb-0 text-muted">&copy; {{ now()->year }}<a href="https://wibest.pl" class="ms-2 text-muted mb-0 text-decoration-none">WIBEST</a></p>
 
                 <a href="{{route('index')}}" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                     <img class="img-fluid" alt="" src="{{asset('image/logo.png')}}" style="max-width: 6em;">
@@ -67,7 +66,6 @@
                     <li class="nav-item"><a href="{{ Request::path() == '/' ? '' : route('index') }}#apartments" class="nav-link px-2 text-muted">O nas</a></li>
                     <li class="nav-item"><a href="{{ Request::path() == '/' ? '' : route('index') }}#contact" class="nav-link px-2 text-muted">Kontakt</a></li>
                     <li class="nav-item"><a href="{{ Request::path() == '/' ? '' : route('index') }}#gallery" class="nav-link px-2 text-muted">Galeria</a></li>
-                    <li class="nav-item"><a href="{{ Request::path() == '/' ? '' : route('index') }}#opinion" class="nav-link px-2 text-muted">Opinie</a></li>
                     <li class="nav-item"><a href="{{route('rules')}}" class="nav-link px-2 text-muted">Regulamin</a></li>
                 </ul>
             </footer>
