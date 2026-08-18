@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Exception;
 use GuzzleHttp\Client as GuzzleHttpClient;
 use Illuminate\Http\Request;
 
@@ -11,7 +12,11 @@ class ScraperController extends Controller
     {
         $client = new GuzzleHttpClient();
         $url = $string;
-        $page = $client->request('GET', $url);
+        try {
+            $page = $client->request('GET', $url);
+        } catch (Exception $e) {
+            return ['error' => '404'];
+        }
         $html = $page->getBody();
 
         $dom = new \DOMDocument();

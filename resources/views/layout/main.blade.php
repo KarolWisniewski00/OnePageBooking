@@ -29,7 +29,7 @@
                     <li class="nav-item text-white px-1 text-end">{{$setting['header']}}</li>
                 </ul>
                 <ul class="nav col-md-4 justify-content-end">
-                    <li class="nav-item text-white px-1"><a href="{{$setting['ig_link']}}" class="text-white" style="text-decoration: none;"><img class="rounded-circle" alt="" src="https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png" width="32px" height="32px"></a></li>
+                    <li class="nav-item text-white px-1"><a href="{{$setting['ig_link']}}" class="text-white" style="text-decoration: none;"><img class="rounded-circle" alt="" src="{{ asset('instagram.png') }}" width="32px" height="32px"></a></li>
                     <li class="nav-item text-white px-1"><a href="{{$setting['b_link']}}" class="text-white" style="text-decoration: none;"><img class="rounded-circle" alt="" src="https://cf.bstatic.com/static/img/favicon/9ca83ba2a5a3293ff07452cb24949a5843af4592.svg" width="32px" height="32px"></a></li>
                 </ul>
             </div>
